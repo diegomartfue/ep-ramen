@@ -4,7 +4,7 @@ Submitted by: **Diego Martinez**
 
 About this web app: **A listicle-style guide to the best ramen and noodle spots in El Paso, TX. Browse all spots on the homepage and click any card to see a full detail view with neighborhood, price range, description, and must-try dish.**
 
-Time spent: **X** hours
+Time spent: **3** hours
 
 ## Required Features
 
