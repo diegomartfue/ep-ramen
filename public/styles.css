@@ -1,0 +1,91 @@
+/* ep-ramen-guide styles */
+
+/* Page header: centered site title with bottom border */
+.site-header {
+  text-align: center;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  background: #fafafa;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Spot list on /: responsive 3-column grid */
+.ramen-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .ramen-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Cards are wrapped in <a> tags: whole card clickable, no underline */
+.ramen-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.ramen-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.ramen-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.ramen-card .card-body {
+  padding: 1rem;
+}
+
+.ramen-card h3 {
+  margin: 0 0 0.25rem;
+}
+
+.ramen-card small {
+  color: #6b6b6b;
+}
+
+/* Detail page: centered, constrained width */
+.spot-detail {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.spot-detail img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Must-try highlighted badge */
+.must-try-badge {
+  display: inline-block;
+  background: #f0f0f0;
+  border-radius: 6px;
+  padding: 0.25rem 0.75rem;
+}
+
+/* 404 page: centered with large emoji */
+.not-found {
+  max-width: 600px;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.not-found-emoji {
+  font-size: 5rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
